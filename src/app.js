@@ -11,7 +11,7 @@ app.get("/help", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("<h1>About</h1>");
+  res.send("<h1>About Me, waakakkakaka</h1>");
 });
 
 app.get("/weather", (req, res) => {
