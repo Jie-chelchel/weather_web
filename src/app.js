@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-
+const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.send("<h1>Weather</h1>");
 });
@@ -17,6 +17,6 @@ app.get("/about", (req, res) => {
 app.get("/weather", (req, res) => {
   res.send({ forecasth: "snowing", location: "longmont" });
 });
-app.listen("3000", () => {
-  console.log("Listening on port: 3000");
+app.listen(port, () => {
+  console.log("Listening on port: " + port);
 });
